@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProviderService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ProviderService.Api.Controllers.ProviderController.GetAll">
+            <summary>
+            Gets all existing Providers.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProviderService.Api.Controllers.ProviderController.Get(System.Int32)">
+            <summary>
+            Gets an existing Provider by its identifier.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProviderService.Api.Controllers.ProviderController.Post(ProviderService.Api.Models.Provider)">
+            <summary>
+            Adds a new Provider.
+            </summary>
+            <param name="provider"></param>
+            <remarks>
+            Maybe you wanted to provide more detail for a sample request:
+            
+                POST api/Provider/Post
+                {        
+                  "id": "1",
+                  "companyName": "SomeCompanyName",
+                  "alternateIdentifier": "3fa85f64-5717-4562-b3fc-2c963f66afa6", --GUID here...
+                  "isActive": true
+                }
+            </remarks>
+            <returns>Returns a newly created Provider</returns>
+            <response code="201">Returns the newly created Provider</response>
+            <response code="400">If the Provider provided as a parameter is null</response>    
+            <response code="500">If an exception is thrown while trying to execute the operation</response>    
+        </member>
+        <member name="M:ProviderService.Api.Controllers.ProviderController.Put(ProviderService.Api.Models.Provider)">
+            <summary>
+            Updates an existing Provider.
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProviderService.Api.Controllers.ProviderController.Delete(System.Int32)">
+            <summary>
+            Deletes an existing Provider by ID.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
